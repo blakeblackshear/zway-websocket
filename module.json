@@ -1,0 +1,28 @@
+{
+  "singleton": true,
+  "dependencies": ["BaseModule"],
+  "category": "developers_stuff",
+  "author": "Blake Blackshear",
+  "homepage": "https://github.com/blakeblackshear/zway-websocket",
+  "icon": "icon.png",
+  "moduleName": "WebSockets",
+  "version": "1.0.0",
+  "maturity": "stable",
+  "repository": {
+      "type": "git",
+      "source": "https://github.com/blakeblackshear/zway-websocket"
+  },
+  "defaults": {
+    "title": "__m_title__",
+    "description": "__m_descr__"
+  },
+  "schema": {
+    "type": "object",
+    "properties": {},
+    "required": false
+  },
+  "options": {
+    "toolbarSticky": true,
+    "fields": {}
+  }
+}
