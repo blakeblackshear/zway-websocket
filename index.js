@@ -128,6 +128,8 @@ WebSockets.prototype.connectToServer = function() {
     self.sock = new sockets.websocket(self.websocketServer);
     self.sock.onopen = function () {
       self.log('Connected');
+      //TODO: change this to something unique
+      self.sock.send("downstairs");
       self.reconnectCount = 0;
       self.connected = true;
       self.flushQueue();
