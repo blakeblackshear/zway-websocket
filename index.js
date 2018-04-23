@@ -196,7 +196,7 @@ WebSockets.prototype.setDevice = function(id, value) {
   var device = self.controller.devices.get(id);
   var deviceType = device.get('deviceType');
 
-  if (deviceType.startsWith("sensor")) {
+  if (deviceType.indexOf("sensor") === 0) {
     self.error("Can't perform action on sensor " + device.get("metrics:title"));
     return;
   }
