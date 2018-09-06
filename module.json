@@ -14,15 +14,25 @@
   },
   "defaults": {
     "title": "__m_title__",
-    "description": "__m_descr__"
+    "description": "__m_descr__",
+    "wsServer": "ws://blakeshome.com:9009"
   },
   "schema": {
     "type": "object",
-    "properties": {},
+    "properties": {
+      "wsServer": {
+        "type": "string",
+        "required": true
+      }
+    },
     "required": false
   },
   "options": {
     "toolbarSticky": true,
-    "fields": {}
+    "fields": {
+      "wsServer": {
+        "label": "Websocket Server"
+      }
+    }
   }
 }

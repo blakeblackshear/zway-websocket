@@ -36,7 +36,7 @@ WebSockets.prototype.init = function (config) {
   
   self.initialized = true;
 
-  self.websocketServer = "ws://blakeshome.com:9009";
+  self.websocketServer = config.wsServer;//"ws://blakeshome.com:9009";
 
   self.reconnectCount = 0;
 
