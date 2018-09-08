@@ -15,12 +15,17 @@
   "defaults": {
     "title": "__m_title__",
     "description": "__m_descr__",
-    "wsServer": "ws://blakeshome.com:9009"
+    "wsServer": "ws://blakeshome.com:9009",
+    "deviceName": "zway"
   },
   "schema": {
     "type": "object",
     "properties": {
       "wsServer": {
+        "type": "string",
+        "required": true
+      },
+      "deviceName": {
         "type": "string",
         "required": true
       }
@@ -32,6 +37,9 @@
     "fields": {
       "wsServer": {
         "label": "Websocket Server"
+      },
+      "deviceName": {
+        "label": "Device Name"
       }
     }
   }
