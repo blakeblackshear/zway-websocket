@@ -28,6 +28,8 @@ _module = WebSockets;
 
 WebSockets.prototype.init = function (config) {
   var self = this;
+
+  self.config = config;
   
   self.log("init");
   //self.log(JSON.stringify(self.controller.locations));
