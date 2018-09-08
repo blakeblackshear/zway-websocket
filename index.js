@@ -128,7 +128,7 @@ WebSockets.prototype.connectToServer = function() {
     self.sock = new sockets.websocket(self.websocketServer);
     self.sock.onopen = function () {
       self.log('Connected');
-      self.sock.send(this.config.deviceName);
+      self.sock.send(self.config.deviceName);
       self.reconnectCount = 0;
       self.connected = true;
       self.flushQueue();
